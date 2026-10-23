@@ -11,3 +11,5 @@ data/private/
 .DS_Store
 
 media/frames/
+media/deck_frames/
+media/deck_render_verification/

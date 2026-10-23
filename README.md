@@ -46,3 +46,7 @@ Official Mezo Buildathon (https://mezo.org/blog/mezo-buildathon-is-underway/) pe
 ## Live product demonstration
 
 The 104-second silent captioned proof video is at https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/demo.mp4. It was generated from an ACTUAL Chrome screenshot of the public deployed site and on-chain verified pinned JSON, NOT fake client trades. Source code to rebuild: scripts/build_pitch.py. The video is an original project deliverable, not an actual confirmed grant entry.
+
+## Project deck for approved funding conversations
+
+The seven-slide project PDF is available at https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/pitch.pdf. The source generator is scripts/build_deck.py and all figures are grounded in docs/latest.json. A text-first, more accessible application outline is PITCH.md. This does not represent a registered or approved Mezo grant or AKINDO submission; original human legal identity/KYB fields remain unknown.
