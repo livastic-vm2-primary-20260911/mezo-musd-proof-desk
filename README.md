@@ -50,3 +50,13 @@ The 104-second silent captioned proof video is at https://livastic-vm2-primary-2
 ## Project deck for approved funding conversations
 
 The seven-slide project PDF is available at https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/pitch.pdf. The source generator is scripts/build_deck.py and all figures are grounded in docs/latest.json. A text-first, more accessible application outline is PITCH.md. This does not represent a registered or approved Mezo grant or AKINDO submission; original human legal identity/KYB fields remain unknown.
+
+## Buyer-facing sample report (uncommissioned)
+
+Published sample: https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/sample-report.html
+
+It is an original two-block HTML deliverable generated **entirely offline** from the pinned firstparty Mezo evidence included in the repo; it is not a paid commission, security certification, backing/peg guarantee or live balance feed. Source: scripts/build_sample_report.py; twelve extra strict source/contract identity, bytecode-flag and exclusive-create unit tests: tests/test_sample_report.py. All 40 offline unit tests pass. Reproduce without RPC calls or keys:
+
+    python3 -B scripts/build_sample_report.py --out /tmp/musd_sample_report.html
+
+This sample states the proposed 19 native Base Circle USDC price **without implying a customer budget or a sale**. An independent buyer's written acceptance, exact network/token/public original payee, one human owner ID, AI-assisted IP and scope/fees/refunds are required for any paid bespoke work.

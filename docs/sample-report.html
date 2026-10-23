@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Mezo MUSD — publicly reproducible two-block sample evidence report</title>
+<meta name="description" content="Original Mezo Proof Desk example: two verified mainnet blocks, ERC20 MUSD/MEZO supply, three basic-pool reserves, runtime bytecode SHA256. A sales sample, not a client report.">
+<style>
+:root{--bg:#07151a;--card:#0f292d;--ink:#f0f7f1;--dim:#adccc4;--accent:#b3ebda;--warm:#e9bd78;--stroke:#365459}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 system-ui,-apple-system,sans-serif}
+main{max-width:1100px;margin:auto;padding:38px 25px 84px}a{color:var(--accent)}header{border-bottom:1px solid var(--stroke);padding-bottom:28px}.eyebrow{color:var(--accent);font:12px monospace;letter-spacing:.13em;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,5vw,4.5rem);letter-spacing:-.05em;line-height:1.15;margin:20px 0}
+h2{font-size:1.65rem;letter-spacing:-.035em;margin:0 0 10px}h3{margin:0 0 10px}
+.pill{display:inline-block;border:1px solid var(--warm);color:var(--warm);border-radius:99px;padding:6px 13px;font:12px monospace;letter-spacing:.06em}
+.lead{max-width:850px;font-size:1.08rem;color:var(--dim)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.stats>div{background:var(--card);border:1px solid var(--stroke);padding:20px}.stats small{display:block;color:var(--dim);font-size:12px}.stats b{font-size:1.38rem;font-weight:600;letter-spacing:-.03em}
+section{margin-top:48px}.note{padding:17px 20px;background:#1d2c29;border-left:3px solid var(--warm);color:#d7dfd7}
+.table-wrap{overflow:auto;border:1px solid var(--stroke);margin-top:20px}table{width:100%;min-width:710px;border-collapse:collapse}
+th,td{padding:14px 15px;text-align:left;border-bottom:1px solid var(--stroke);vertical-align:top}th{background:#123035;color:var(--accent);font:12px monospace}td small{display:block;color:var(--dim);font-size:11px;overflow-wrap:anywhere}
+td.mono,.mono{font:12px/1.7 ui-monospace,Consolas,monospace}.hash{overflow-wrap:anywhere;max-width:420px}
+.foot{margin-top:44px;border-top:1px solid var(--stroke);padding-top:20px;color:var(--dim);font-size:13px}
+.meter{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}.meter span{border:1px solid var(--stroke);padding:10px 15px;background:var(--card);font:12px monospace}
+@media(max-width:730px){.stats{grid-template-columns:1fr} main{padding:23px 17px 45px}}
+@media print{:root{--bg:#fff;--card:#fff;--ink:#151d1d;--dim:#4e6060;--accent:#154f49;--warm:#675520;--stroke:#a7bdb9}body{background:white}main{max-width:100%;padding:12px}table{font-size:12px}a{color:inherit;text-decoration:underline}}
+</style></head><body><main>
+<header><div class="eyebrow">ONE CURSOR / ORIGINAL MEZO MAINNET EVIDENCE</div>
+<h1>MUSD reserve &amp;<br>contract-change facts.</h1>
+<p class="pill">PUBLIC SALES SAMPLE — NOT COMMISSIONED, NOT A SECURITY AUDIT</p>
+<p class="lead">An example of a two-block source-backed report using actual published Mezo contracts, not hypothetical customers or synthetic screenshots. Scope covers 3 explicitly named basic liquidity pools and two token total supplies only. Every network read was read-only and pinned to a real Mezo block.</p>
+<div class="stats">
+<div><small>CHAIN</small><b>Mezo Mainnet / 31612</b></div>
+<div><small>BLOCKS OBSERVED</small><b>#12,709,282 → #12,709,416</b></div>
+<div><small>CHANGED BYTECODE FINGERPRINTS</small><b>0 / 5 sampled</b></div>
+</div></header>
+
+<section><p class="eyebrow">01 / PROVENANCE</p><h2>Independent timestamps &amp; hashes</h2>
+<p>Before: <b>2026-10-23T14:49:48+00:00</b> · After: <b>2026-10-23T14:58:23+00:00</b>. The observations are <b>not</b> continuous monitoring. Both were checked against the RPC-reported block hash.</p>
+<p class="mono">Before hash: 0xec725dabc6caf474d88979ddb579efcb28e9300316049ae5f8ca4331808528d9<br>After hash: 0x5c398b8894f2963660f25762930099df428232c2690bee2a5ef686159264a81d</p>
+<p class="mono">Source SHA256 (before): b759f07d62272477b71dbcc7b8fb3a35096712e7656a4eb66fa4a8f16a514644<br>Source SHA256 (after): bb3628079ab0f0edd062127332a0927c0e46967b7e914b03f39428b2b85894fd<br>Comparison SHA256: 28bcf7af4231784350024bce264e88b635729dea44d417755c52c740e1c6955f</p></section>
+
+<section><p class="eyebrow">02 / ERC-20 SUPPLIES</p><h2>Two source contracts, two fixed blocks</h2>
+<div class="table-wrap"><table><thead><tr><th>Token</th><th>Before supply</th><th>After supply</th><th>Observed difference</th></tr></thead><tbody><tr><td><b>MUSD</b></td><td class="mono">29,482,016.9861</td><td class="mono">29,482,016.9861</td><td class="mono">0</td></tr><tr><td><b>MEZO</b></td><td class="mono">1,138,540,989.7482</td><td class="mono">1,138,540,989.7482</td><td class="mono">0</td></tr></tbody></table></div>
+<p class="note">totalSupply is an ERC-20 on-chain reporting field. It is NOT market capitalization, peg health, redeemable balance, cumulative lending volume or protocol collateral.</p></section>
+
+<section><p class="eyebrow">03 / THREE PUBLISHED BASIC POOLS</p><h2>Real MUSD reserves, no made-up prices</h2>
+<div class="table-wrap"><table><thead><tr><th>Mezo documented pool</th><th>Before MUSD</th><th>After MUSD</th><th>Observed delta</th><th>Balance minus reserve</th></tr></thead><tbody><tr><td><b>MUSD / BTC</b><br><small class="mono">0x52e604c44417233b6CcEDDDc0d640A405Caacefb</small></td><td class="mono">39,338.597921</td><td class="mono">39,338.597921</td><td class="mono">0</td><td class="mono">0</td></tr><tr><td><b>MUSD / mUSDC</b><br><small class="mono">0xEd812AEc0Fecc8fD882Ac3eccC43f3aA80A6c356</small></td><td class="mono">6,852.662834</td><td class="mono">6,852.662834</td><td class="mono">0</td><td class="mono">0</td></tr><tr><td><b>MUSD / mUSDT</b><br><small class="mono">0x10906a9E9215939561597b4C8e4b98F93c02031A</small></td><td class="mono">7,700.365872</td><td class="mono">7,700.365872</td><td class="mono">0</td><td class="mono">0</td></tr></tbody></table></div>
+<div class="meter"><span>Combined before: 53,891.626628 MUSD</span>
+<span>Combined after: 53,891.626628 MUSD</span></div>
+<p class="note">These are the three documented basic pools, NOT all MEZO/MUSD liquidity or available output from a stable-curve swap. Reserve ratio does not imply price or safety.</p></section>
+
+<section><p class="eyebrow">04 / RUNTIME SHA256</p><h2>Change-control fingerprint sample</h2>
+<div class="table-wrap"><table><thead><tr><th>Source contract</th><th>SHA256 of deployed runtime code (after)</th><th>Two-block outcome</th></tr></thead><tbody><tr><td>MUSD</td><td class="mono hash">893d9275226a5019c7ad52628010228272d2124732d951a0ca376aded02b4107</td><td>Same in both samples</td></tr><tr><td>MEZO</td><td class="mono hash">7044b15c742184f42270a7ddcb0a20d3dd3f69b920bc6c8cd74e5c62de30616e</td><td>Same in both samples</td></tr><tr><td>MUSD / BTC</td><td class="mono hash">66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81</td><td>Same in both samples</td></tr><tr><td>MUSD / mUSDC</td><td class="mono hash">66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81</td><td>Same in both samples</td></tr><tr><td>MUSD / mUSDT</td><td class="mono hash">66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81</td><td>Same in both samples</td></tr></tbody></table></div>
+<p>No observed SHA256 changes between the two sampled blocks. This **does not prove** zero upgrades at intervening times or the absence of vulnerabilities.</p></section>
+
+<section><p class="eyebrow">05 / REVIEW &amp; BUSINESS TERMS</p><h2>What a buyer can actually commission</h2>
+<p>Sample public report only. A custom 19 USDC seller-proposed report would require an independently confirmed budget, exact public protocol address/chain/token, two desired blocks, signed-off evidence-scope and independent human-assisted review of conclusions. Timing, acceptance, one follow-up review, IP, refunds and original one-human owner tax/payment eligibility must be agreed in writing <b>before</b> delivery.</p>
+<p>Neither a customer contract, earned sale, funded escrow, contest entry nor award is implied by this sample.</p>
+<p><a href="https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/">← Return to live MUSD Proof Desk</a> &nbsp; <a href="https://github.com/livastic-vm2-primary-20260911/mezo-musd-proof-desk">View source and 28 offline unit tests ↗</a></p>
+</section>
+<div class="foot">Generated deterministically offline from publicly verified pinned Mezo snapshots using Python standard library, Decimal and HTML escaping. No real customer material, passwords, API keys, wallets or network calls. This research is AI-assisted, open-source, and independent of Mezo. Legal identity and KYB are not represented as verified.</div>
+</main></body></html>
