@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "mezo-musd-proofdesk-v1",
+  "generatedUTC": "2026-10-23T14:58:32+00:00",
+  "network": {
+    "chainId": 31612,
+    "name": "Mezo Mainnet",
+    "rpcURL": "https://mezo-mainnet.boar.network",
+    "gasAsset": "BTC"
+  },
+  "block": {
+    "number": 12709416,
+    "hash": "0x5c398b8894f2963660f25762930099df428232c2690bee2a5ef686159264a81d",
+    "timestampUTC": "2026-10-23T14:58:23+00:00"
+  },
+  "assets": {
+    "MUSD": {
+      "address": "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186",
+      "decimals": 18,
+      "totalSupply": "29482016.986182972908040124",
+      "totalSupplyRaw": "29482016986182972908040124",
+      "runtime": {
+        "bytes": 6436,
+        "sha256": "893d9275226a5019c7ad52628010228272d2124732d951a0ca376aded02b4107"
+      }
+    },
+    "MEZO": {
+      "address": "0x7B7c000000000000000000000000000000000001",
+      "decimals": 18,
+      "totalSupply": "1138540989.748240837394828695",
+      "totalSupplyRaw": "1138540989748240837394828695",
+      "runtime": {
+        "bytes": 3021,
+        "sha256": "7044b15c742184f42270a7ddcb0a20d3dd3f69b920bc6c8cd74e5c62de30616e"
+      }
+    }
+  },
+  "pools": [
+    {
+      "name": "MUSD / BTC",
+      "kind": "volatile",
+      "address": "0x52e604c44417233b6CcEDDDc0d640A405Caacefb",
+      "code": {
+        "bytes": 45,
+        "sha256": "66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81"
+      },
+      "token0": "0x7b7c000000000000000000000000000000000000",
+      "token1": "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
+      "asset0": "BTC",
+      "asset1": "MUSD",
+      "reserve0Raw": "474513111993578505",
+      "reserve1Raw": "39338597921228749227732",
+      "reserve0": "0.474513111993578505",
+      "reserve1": "39338.597921228749227732",
+      "musdReserve": "39338.597921228749227732",
+      "musdBalanceInPool": "39338.597921228749227732",
+      "reserveTimestampUnix": 1792739769,
+      "reserveBalanceDifference": "0"
+    },
+    {
+      "name": "MUSD / mUSDC",
+      "kind": "stable",
+      "address": "0xEd812AEc0Fecc8fD882Ac3eccC43f3aA80A6c356",
+      "code": {
+        "bytes": 45,
+        "sha256": "66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81"
+      },
+      "token0": "0x04671c72aab5ac02a03c1098314b1bb6b560c197",
+      "token1": "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
+      "asset0": "mUSDC",
+      "asset1": "MUSD",
+      "reserve0Raw": "4798341959",
+      "reserve1Raw": "6852662834954862377028",
+      "reserve0": "4798.341959",
+      "reserve1": "6852.662834954862377028",
+      "musdReserve": "6852.662834954862377028",
+      "musdBalanceInPool": "6852.662834954862377028",
+      "reserveTimestampUnix": 1792697651,
+      "reserveBalanceDifference": "0"
+    },
+    {
+      "name": "MUSD / mUSDT",
+      "kind": "stable",
+      "address": "0x10906a9E9215939561597b4C8e4b98F93c02031A",
+      "code": {
+        "bytes": 45,
+        "sha256": "66b0ad6862403d557d6b6f8c67d7ef8a1f5855e45f90ab2e012bbf39afb65d81"
+      },
+      "token0": "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
+      "token1": "0xeb5a5d39de4ea42c2aa6a57eca2894376683bb8e",
+      "asset0": "MUSD",
+      "asset1": "mUSDT",
+      "reserve0Raw": "7700365872321640162678",
+      "reserve1Raw": "5463143479",
+      "reserve0": "7700.365872321640162678",
+      "reserve1": "5463.143479",
+      "musdReserve": "7700.365872321640162678",
+      "musdBalanceInPool": "7700.365872321640162678",
+      "reserveTimestampUnix": 1792530770,
+      "reserveBalanceDifference": "0"
+    }
+  ],
+  "measuredPoolMUSDReserves": "53891.626628505251767438",
+  "sources": [
+    "https://mezo.org/docs/users/resources/contracts-reference",
+    "https://mezo.org/docs/developers/features/mezo-pools",
+    "https://testnet.mezo.org/docs/users/getting-started/connect"
+  ],
+  "method": "One chain-verified pinned block; contract ERC-20 totalSupply/decimals/balanceOf, official basic-pool token0/token1/getReserves and code SHA256",
+  "limitations": [
+    "Point-in-time block evidence, not consensus verification or a full audit.",
+    "Pool reserves and MUSD balances are neither USD prices nor collateral backing.",
+    "The measured pools are NOT all possible MUSD venues or bridged supplies.",
+    "No buy, trade, withdrawal, approval, liquidation, or gas operation is performed.",
+    "Prices, pegs, profit, APY, asset custody and user deposits are NOT verified."
+  ],
+  "signed": false,
+  "userFundsSpent": false
+}

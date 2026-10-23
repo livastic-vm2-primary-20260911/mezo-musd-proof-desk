@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+credentials.json
+data/private/
+.DS_Store

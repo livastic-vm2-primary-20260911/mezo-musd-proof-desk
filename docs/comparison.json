@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "mezo-musd-proofdesk-comparison-v1",
+  "from": {
+    "number": 12709282,
+    "hash": "0xec725dabc6caf474d88979ddb579efcb28e9300316049ae5f8ca4331808528d9",
+    "timestampUTC": "2026-10-23T14:49:48+00:00"
+  },
+  "to": {
+    "number": 12709416,
+    "hash": "0x5c398b8894f2963660f25762930099df428232c2690bee2a5ef686159264a81d",
+    "timestampUTC": "2026-10-23T14:58:23+00:00"
+  },
+  "contractsAndPools": [
+    {
+      "name": "MUSD",
+      "runtimeChanged": false,
+      "supplyBefore": "29482016.986182972908040124",
+      "supplyAfter": "29482016.986182972908040124"
+    },
+    {
+      "name": "MEZO",
+      "runtimeChanged": false,
+      "supplyBefore": "1138540989.748240837394828695",
+      "supplyAfter": "1138540989.748240837394828695"
+    },
+    {
+      "name": "MUSD / BTC",
+      "runtimeChanged": false,
+      "musdReserveBefore": "39338.597921228749227732",
+      "musdReserveAfter": "39338.597921228749227732"
+    },
+    {
+      "name": "MUSD / mUSDC",
+      "runtimeChanged": false,
+      "musdReserveBefore": "6852.662834954862377028",
+      "musdReserveAfter": "6852.662834954862377028"
+    },
+    {
+      "name": "MUSD / mUSDT",
+      "runtimeChanged": false,
+      "musdReserveBefore": "7700.365872321640162678",
+      "musdReserveAfter": "7700.365872321640162678"
+    }
+  ],
+  "priceOrSolvencyProven": false,
+  "comment": "Change evidence only; does not attest liquidity safety, prices, or independent earnings."
+}

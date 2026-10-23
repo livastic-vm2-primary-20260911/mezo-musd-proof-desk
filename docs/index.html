@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Mezo MUSD Proof Desk: verified pinned-block MUSD reserves in BTC, mUSDC and mUSDT pools, MEZO supply, runtime hashes, and clear risk-evidence limitations. No wallet or trading.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/">
+  <meta property="og:title" content="MUSD Proof Desk · On-chain evidence, not a price prediction">
+  <meta property="og:description" content="Real Mezo Mainnet: pinned-block MUSD/MEZO supply and pool reserves. Free source, exact evidence, zero wallet connection.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/">
+  <title>MUSD Proof Desk — Mezo on-chain reserve evidence</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="MUSD Proof Desk home"><span class="logomark">M<span>·</span></span><span>MEZO <b>PROOF</b> DESK<small>A One Cursor research tool</small></span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#markets">Pools</a>
+      <a href="#methodology">Method</a>
+      <a href="#source">Source</a>
+      <a href="#quote" class="nav-cta">Paid scope ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="status-ribbon"><span class="pulse"></span> VERIFIED PUBLIC DATA <span class="separator">·</span> MEZO MAINNET / 31612 <span class="separator">·</span> NO SIGNER. NO GAS.</div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT ON-CHAIN RESEARCH / 01</p>
+        <h1>Proof first.<br><em>Price later.</em></h1>
+        <p class="lead">MUSD and MEZO, measured against actual contracts and publicly documented liquidity pools on a single Mezo block. The numbers have hashes, coordinates and limits—not invented confidence scores.</p>
+        <div class="hero-actions"><a class="button solid" href="#markets">Explore pinned evidence <span>↗</span></a><a class="button outline" href="https://github.com/livastic-vm2-primary-20260911/mezo-musd-proof-desk">View full source ↗</a></div>
+        <p class="footnote">Independent, AI-assisted prototype. Not affiliated with Mezo. Not an audit, solvency guarantee, investment advice or live execution agent.</p>
+      </div>
+      <div class="hero-diagram" aria-label="Schematic read-only flow">
+        <div class="diagram-caption">DATA PATH / VERIFIABLE, NON-CUSTODIAL</div>
+        <div class="diagram-chain"><span>Mezo mainnet</span><code>31612</code></div>
+        <div class="diagram-line"></div>
+        <div class="diagram-node big"><div>PUBLIC READ</div><strong>One pinned block</strong><span>chainId · hash · timestamp · code</span></div>
+        <div class="diagram-line two"></div>
+        <div class="diagram-branches"><div><b>MUSD</b><small>18 decimals</small></div><div><b>MEZO</b><small>18 decimals</small></div><div><b>3 pools</b><small>Reserves</small></div></div>
+        <div class="diagram-bottom"><span>→</span> OFFLINE EVIDENCE.JSON <span>→</span> NO WALLET</div>
+      </div>
+    </section>
+
+    <section class="stats section" aria-labelledby="snapshot-title">
+      <div class="section-head"><div><p class="eyebrow">02 / SNAPSHOT</p><h2 id="snapshot-title">One block. Four facts.</h2></div><div class="snapshot-chip"><span class="dot"></span><span id="snapshot-state">Loading verified evidence…</span></div></div>
+      <div class="metrics">
+        <article><p>Published MUSD supply</p><div><strong id="musd-supply">—</strong><span>MUSD</span></div><small>ERC-20 totalSupply · single-chain</small></article>
+        <article><p>Published MEZO supply</p><div><strong id="mezo-supply">—</strong><span>MEZO</span></div><small>ERC-20 totalSupply · not market cap</small></article>
+        <article><p>MUSD reserves in listed pools</p><div><strong id="pooled-musd">—</strong><span>MUSD</span></div><small>Three documented basic pools only</small></article>
+        <article><p>Proof block</p><div><strong id="block-number">—</strong><span>#</span></div><small id="block-time">Timestamp pending</small></article>
+      </div>
+      <div class="hash-strip"><span>BLOCK HASH</span><code id="block-hash">—</code><span>Chain 31612</span></div>
+    </section>
+
+    <section id="markets" class="section markets" aria-labelledby="market-title">
+      <div class="section-head"><div><p class="eyebrow">03 / MUSD LIQUIDITY</p><h2 id="market-title">Where the reserves sit.</h2><p class="intro">Each balance and each reserve is read directly from Mezo contracts at exactly the same block. A contract balance is not a trading price.</p></div><div class="legend"><span class="legend-box"></span> MUSD reserve share of the three listed pools</div></div>
+      <div id="pool-list" class="pool-list" aria-live="polite">
+        <div class="loading">Loading actual pinned-chain results…</div>
+      </div>
+      <p class="data-warning"><strong>Important:</strong> Reserve distribution is not a risk rating, proof of MUSD backing, APY, liquidity available for your trade, or a statement about other pools. Stable-curve pools require more than reserve ratios to price a swap.</p>
+    </section>
+
+    <section class="section proof-section" aria-labelledby="proof-title">
+      <div class="section-head"><div><p class="eyebrow">04 / EVIDENCE QUALITY</p><h2 id="proof-title">What the data does—and doesn't—prove.</h2></div></div>
+      <div class="evidence-grid"><article><b>01</b><h3>Verified chain</h3><p>Require EVM chain 31612 before reading contracts. Refuse a different network rather than mixing balances.</p></article>
+      <article><b>02</b><h3>Block-consistent</h3><p>Pin every code, supply and pool call to one block number and re-read its hash. No best-effort "latest" mixing.</p></article>
+      <article><b>03</b><h3>Contract identity</h3><p>Compare actual token0/token1 against Mezo's published pair addresses. Missing code or a changed pair stops the report.</p></article>
+      <article><b>04</b><h3>No execution</h3><p>Only allow six read-only JSON-RPC methods. No sign, allowance, swap, transaction, gas or wallet connection.</p></article></div>
+    </section>
+
+    <section class="section terminal-section" id="source" aria-labelledby="source-title">
+      <div class="section-head"><div><p class="eyebrow">05 / REPRODUCE</p><h2 id="source-title">Don't take our word for it.</h2><p class="intro">The site renders a static evidence file. Anyone can regenerate it with the Python standard library, read-only RPC, and an exact source list.</p></div><a class="text-link" href="./latest.json">Open exact evidence JSON ↗</a></div>
+      <div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>reproduce locally — Python 3.11+</span></div><pre><code>git clone https://github.com/livastic-vm2-primary-20260911/mezo-musd-proof-desk.git
+cd mezo-musd-proof-desk
+python3 -B -m unittest discover -s tests -q
+python3 -B mezo_proof.py snapshot --out evidence/my_mezo_block.json
+python3 -B mezo_proof.py compare --left evidence/before.json --right evidence/after.json --out evidence/change.json</code></pre></div>
+      <div class="source-links"><a href="https://mezo.org/docs/users/resources/contracts-reference">Mezo official token addresses ↗</a><a href="https://mezo.org/docs/developers/features/mezo-pools">Mezo official pools ↗</a><a href="https://testnet.mezo.org/docs/users/getting-started/connect">Mezo chain 31612 ↗</a></div>
+      <div class="code-hash-grid"><div><span>MUSD deployed code SHA256</span><code id="musd-codehash">—</code></div><div><span>MEZO deployed code SHA256</span><code id="mezo-codehash">—</code></div></div>
+    </section>
+
+    <section id="quote" class="section contact" aria-labelledby="contact-title"><div><p class="eyebrow">06 / PRACTICAL USE</p><h2 id="contact-title">Need a defensible<br>release snapshot?</h2><p>Example paid pilot: two named pinned blocks, reserve and runtime changes, review of documented on-chain addresses, and a concise limitations table. Public chain inputs only. AI assistance disclosed.</p><p class="disclosure">Indicative seller quote: <strong>19 USDC</strong> (not a buyer-approved price). Human owner, supported network/token, review scope, delivery, fee and IP must be agreed in writing before starting. Confirmed customers: 0. Confirmed sales: 0.</p></div><div class="contact-actions"><a class="button solid" href="mailto:onecursor1@gmail.com?subject=Mezo%20MUSD%20Proof%20Desk%20-%20paid%20snapshot%20scope&body=Hello%2C%20I%20would%20like%20a%20quote%20for%20a%20Mezo%20MUSD%20pinned%20reserve%20report.%0AScope%20and%20purpose%3A%0ADesired%20blocks%2Fdates%3A%0AAgreed%20payment%20network%20and%20fee%3A%0A">Ask for a paid scope ↗</a><p>No wallet connect. No deposits. No secret keys. No financial guarantee.</p></div></section>
+  </main>
+  <footer><span>© 2026 One Cursor · Independent AI-assisted Mezo research</span><span>FACTS ≠ FORECASTS <span class="separator">/</span> <a href="https://github.com/livastic-vm2-primary-20260911/mezo-musd-proof-desk">MIT source ↗</a></span></footer>
+</body>
+</html>
