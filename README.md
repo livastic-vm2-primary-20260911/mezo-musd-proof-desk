@@ -43,6 +43,8 @@ Official Mezo Buildathon (https://mezo.org/blog/mezo-buildathon-is-underway/) pe
 
 © 2026 One Cursor, original human-operated AI-assisted research. MIT License.
 
+Independent public method write-up (AI-generated disclosure): https://dev.to/livasticvm2primary/two-mezo-blocks-identical-reserves-what-a-read-only-musd-check-actually-proves-pd1
+
 ## Live product demonstration
 
 The 104-second silent captioned proof video is at https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/demo.mp4. It was generated from an ACTUAL Chrome screenshot of the public deployed site and on-chain verified pinned JSON, NOT fake client trades. Source code to rebuild: scripts/build_pitch.py. The video is an original project deliverable, not an actual confirmed grant entry.
