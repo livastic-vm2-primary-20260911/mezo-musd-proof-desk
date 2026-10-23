@@ -9,3 +9,5 @@ secrets/
 credentials.json
 data/private/
 .DS_Store
+
+media/frames/

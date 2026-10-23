@@ -42,3 +42,7 @@ The original live read-only MUSD/MEZO integration is offered as an open MIT-lice
 Official Mezo Buildathon (https://mezo.org/blog/mezo-buildathon-is-underway/) permits extensions to existing projects. Wave 1 ends October 26, 2026. Rewards advertised as 7,000 USD equivalent of MEZO token across two waves, NOT cash earned, not an audited liquid price or guaranteed payout. An AKINDO authenticated original one-owner application with truthful eligibility and sponsor confirmation is still required. This GitHub project is **not itself a contest entry**, merely a legitimate original candidate. Do not fabricate nationality, legal ID, age, GitHub account, wallet signature or participation.
 
 © 2026 One Cursor, original human-operated AI-assisted research. MIT License.
+
+## Live product demonstration
+
+The 104-second silent captioned proof video is at https://livastic-vm2-primary-20260911.github.io/mezo-musd-proof-desk/demo.mp4. It was generated from an ACTUAL Chrome screenshot of the public deployed site and on-chain verified pinned JSON, NOT fake client trades. Source code to rebuild: scripts/build_pitch.py. The video is an original project deliverable, not an actual confirmed grant entry.
